@@ -1,0 +1,161 @@
+/* Edit this file to make your changes! */
+html {
+  font-size: 10px;
+}
+:root {
+  --white: #fff;
+  --gray-100: #756f84;
+  --gray-200: #17161a;
+}
+
+/* main container */
+#ps-desktop-widget__body-container {
+  background: var(--gray-200);
+  max-width: 1200px;
+  min-height: 880px;
+  margin: 1rem auto;
+  padding: 4rem;
+  border-radius: 6rem;
+  box-sizing: border-box;
+  overflow: hidden;
+  position: relative;
+}
+
+/* image container */
+#ps-desktop-widget__body-container #ps-desktop-widget__side-img {
+  order: 2;
+  padding: 2rem;
+  width: calc(40% - 4.4rem);
+  background-size: 96.8%;
+  background-repeat: no-repeat;
+  /* added custom calc to force position .png image accuracy and maintain centeredness at the same time */
+  background-position-y: calc(50% + 5px);
+  background-position-x: calc(50% + 5px);
+  background-color: var(--gray-200);
+}
+
+/* form container */
+#ps-desktop-widget__body {
+  order: 1;
+  padding: 2rem;
+  width: calc(60% - 4.4rem);
+  position: initial;
+  background-color: var(--gray-200);
+}
+
+/* background */
+#ps-desktop-widget__background {
+  background-color: var(--white)
+}
+
+/* close icon container */
+#ps-desktop-widget__close {
+  width: 5.6rem;
+  right: 4.2rem;
+  top: 3.3rem;
+}
+
+/* close icon */
+#ps-desktop-widget__close > svg {
+  width: 100%;
+}
+
+/* bubsnax logo */
+#ps-widget-custom-form__logo-image {
+  width: 9.8rem;
+  height: 9.8rem;
+  margin-bottom: 5rem;
+}
+
+/* text sizes */
+ps-popup-form header > p:last-of-type:not(:first-child) {
+  font-size: 3.2rem;
+  font-weight: 600;
+}
+ps-popup-form h4 {
+  font-size: 5.4rem;
+}
+ps-radio-group legend {
+  font-size: 2.4rem;
+  font-weight: 400;
+}
+ps-radio-group label {
+  font-size: 2.3rem;
+  font-weight: 300;
+}
+
+/* choices container */
+ps-radio-group fieldset {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+}
+
+/* choices legend */
+ps-radio-group legend {
+  font-size: 2.4rem;
+  font-weight: 400;
+  width: 100%;
+}
+/* choices option labels */
+ps-radio-group label + label {
+  margin-top: 1.0rem;
+}
+ps-radio-group label {
+  width: 49.2%;
+  margin: 0 0 0 0.5rem;
+}
+
+/* radio buttons */
+ps-radio-group input[type='radio'] {
+  border: 0.15em solid var(--gray-100);
+  height: 1.6em;
+  width: 1.6em;
+}
+ps-radio-group input[type='radio']:checked {
+  border: 0.15em solid var(--white);
+}
+
+/* phone input */
+ps-input input {
+  height: 7.9rem;
+  border-radius: 1rem;
+  background-color: var(--white);
+}
+.ps-widget-custom-form__text-question-label {
+  font-size: 2.4rem;
+  font-weight: 300;
+  overflow: visible;
+  color: var(--gray-100);
+}
+
+/* legend description texts */
+ps-popup-form small {
+  font-size: 13.5px;
+  font-weight: 100;
+  color: #e1e1e1;
+  line-height: 1.8rem;
+}
+ps-popup-form fieldset ~ small a {
+  color: #3395ff !important;
+}
+
+/* cta button */
+ps-button button, ps-button small {
+  width: auto;
+  padding: 1.5rem 2.8rem;
+  font-size: 1.9rem;
+  font-weight: 600;
+}
+
+/* form elements spacings */
+ps-popup-form header {
+  margin-bottom: 4.3rem;
+}
+ps-popup-form form > fieldset > :not(:last-child) {
+  margin-bottom: 3.5rem;
+}
+#ps-widget-custom-form__form {
+  display: grid;
+  grid-gap: 2.5rem;
+}
